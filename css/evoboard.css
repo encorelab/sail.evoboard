@@ -1,0 +1,203 @@
+body {
+  background-image: url("/images/rocky-bg.jpg");
+  background-size: 100%;
+}
+
+header {
+  border-bottom: none;
+  
+  box-shadow: rgba(0,0,0, 1) 4px 4px 7px;
+}
+
+.widget-box {
+  background: rgba(250,250,250,0.75);
+  color: black;
+}
+
+#connecting, .thanks {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.thanks {
+  background-color: rgba(225,255,200,0.75);
+}
+
+.error {
+  background-color: rgba(255,225,225,0.9);
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#board {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#connecting p {
+  margin: 0em;
+}
+
+#instructions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#observation {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#observation > table {
+  width: 100%;
+}
+
+#observation > table td {
+  padding: 10px;
+}
+
+select, textarea {
+  background-color: black;
+  color: white;
+  font-size: 16pt;
+  padding: 5px;
+  border: none;
+}
+
+#concept {
+  width: 100%;
+}
+
+#explanation {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  min-width: 30em;
+}
+
+#tags {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  font-size: 11pt;
+}
+
+#show-all {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#login {
+  color: black;
+}
+
+input[type=submit] {
+  font-size: 1.5em;
+}
+
+input[type=reset] {
+  background: #888;
+}
+
+.baloon {
+  position: absolute;
+  padding: 8px;
+  max-width: 40%;
+  max-height: 80%;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: rgba(256,256,256,0.7);
+  box-shadow: rgba(0,0,128,0.25) 3px 3px 4px;
+  
+  color: white;
+  font-size: 10pt;
+}
+
+.baloon .concept {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.baloon .tags a {
+  font-weight: bold;
+  color: white;
+}
+
+.baloon .author {
+  font-style: italic;
+  text-align: right;
+}
+
+.baloon .explanation {
+  background-color: rgba(255,255,255,0.5);
+  padding: 2px;
+  color: black;
+}
+
+.baloon:hover {
+  cursor: pointer;
+}
+
+
+/* concepts */
+
+.concept-Adaptation {
+  background-color: #22b573;
+}
+
+.concept-Bottleneck {
+  background-color: #CC3E1F;
+}
+
+.concept-Coevolution {
+  background-color: #FBB03B;
+}
+
+.concept-Founder-effect {
+  background-color: #7EB339;
+}
+
+.concept-Gene-flow {
+  background-color: #29ABE2;
+}
+
+.concept-Natural-selection {
+  background-color: #0071BC;
+}
+
+.concept-Reproductive-isolation {
+  background-color: #F17924;
+}
+
+.concept-Sexual-selection {
+  background-color: #C74EC7;
+}
+
+.concept-Other {
+  background-color: #998675;
+}

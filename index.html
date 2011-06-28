@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>EvoBoard: Observations</title> 
+  
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/start/jquery-ui.css" rel="stylesheet" type="text/css" /> 
+      
+    <link href="js/sail.js/css/sail.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/evoboard.css" rel="stylesheet" type="text/css" /> 
+    
+    
+    <script src="js/sail.js/sail.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+        Sail.load()
+            .then('js/evoboard.js')
+            .thenRun(function() {
+                Sail.UI.init()
+                $(document).ready(EvoBoard.init)
+            })
+    </script>
+</head>
+<body>
+    <header> 
+        <div id="instructions">
+            Based on your observations and group reflections, what evoultionary
+            forces do you think are at play in this environment?
+        </div>
+    </header>
+    
+    <div id="connecting" class="widget-box" style="display: none">
+        <img src="images/loader.gif" />
+        <p>Connecting...</p>
+    </div>
+    
+    <form id="observation" style="display: none">
+        <table>
+            <tr>
+                <td>
+                    <select id="concept">
+                        <option value="">Choose an evolution concept...</option>
+                        <option class="concept-Adaptation" value="Adaptation">Adaptation</option>
+                        <option class="concept-Bottleneck" value="Bottleneck">Bottleneck</option>
+                        <option class="concept-Coevolution" value="Coevolution">Coevolution</option>
+                        <option class="concept-Founder-effect" value="Founder effect">Founder effect</option>
+                        <option class="concept-Gene-flow" value="Gene flow">Gene Flow</option>
+                        <option class="concept-Natural-selection" value="Natural selection">Natural selection</option>
+                        <option class="concept-Reproductive-isolation" value="Reproductive isolation">Reproductive isolation</option>
+                        <option class="concept-Sexual-selection" value="Sexual selection">Sexual selection</option>
+                    </select>
+                </td>
+                <td class="widget-box" style="text-align: center">
+                    <span id="login"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="explanation"></textarea>
+                </td>
+                <td>
+                    <select id="tags" multiple="multiple">
+                        <optgroup label="Fauna">
+                            <option value="Clouded leopard">Clouded leopard</option>
+                            <option value="Fig wasp">Fig wasp</option>
+                            <option value="Hornbill">Hornbill</option>
+                            <option value="Monkey">Monkey</option>
+                            <option value="Orangutan">Orangutan</option>
+                            <option value="Rabbit">Rabbit</option>
+                            <option value="Rhinoceros">Rhinoceros</option>
+                            <option value="Tapir">Tapir</option>
+                            <option value="Tiger">Tiger</option>
+                        </optgroup>
+                        <optgroup label="Flora">
+                            <option value="Fig">Fig</option>
+                            <option value="Tetrastigma">Tetrastigma</option>
+                            <option value="Rafflesia">Rafflesia</option>
+                            <option value="Titan arum">Titan arum</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="Environment">Environment</option>
+                            <option value="Other">Other</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <input type="reset" value="Cancel" />&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
