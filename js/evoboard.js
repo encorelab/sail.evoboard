@@ -50,7 +50,7 @@ EvoBoard = {
         observation = {
             concept: $('#concept').val(),
             explanation: $('#explanation').val(),
-            tags: $('#tags').val()
+            tags: $('#tags input[type=checkbox]:checked').map(function(){return $(this).val()})
         }
         
         if (!observation.concept || observation.explanation.length == 0) {
@@ -123,9 +123,9 @@ EvoBoard = {
         baloon.dblclick(function() {
             expl = $(this).find('.explanation')
             if ($(expl).is(':visible'))
-                $(expl).hide('slide', {direction: 'up'})
+                $(expl).hide('slide', {direction: 'up', duration: 'fast'})
             else
-                $(expl).show('slide', {direction: 'up'})
+                $(expl).show('slide', {direction: 'up', duration: 'fast'})
         })
         
         $("#board").append(baloon)

@@ -46,6 +46,7 @@
                         <option class="concept-Natural-selection" value="Natural selection">Natural selection</option>
                         <option class="concept-Reproductive-isolation" value="Reproductive isolation">Reproductive isolation</option>
                         <option class="concept-Sexual-selection" value="Sexual selection">Sexual selection</option>
+                        <option class="concept-Other" value="Other">Other</option>
                     </select>
                 </td>
                 <td class="widget-box" style="text-align: center">
@@ -57,29 +58,25 @@
                     <textarea id="explanation"></textarea>
                 </td>
                 <td>
-                    <select id="tags" multiple="multiple">
-                        <optgroup label="Fauna">
-                            <option value="Clouded leopard">Clouded leopard</option>
-                            <option value="Fig wasp">Fig wasp</option>
-                            <option value="Hornbill">Hornbill</option>
-                            <option value="Monkey">Monkey</option>
-                            <option value="Orangutan">Orangutan</option>
-                            <option value="Rabbit">Rabbit</option>
-                            <option value="Rhinoceros">Rhinoceros</option>
-                            <option value="Tapir">Tapir</option>
-                            <option value="Tiger">Tiger</option>
-                        </optgroup>
-                        <optgroup label="Flora">
-                            <option value="Fig">Fig</option>
-                            <option value="Tetrastigma">Tetrastigma</option>
-                            <option value="Rafflesia">Rafflesia</option>
-                            <option value="Titan arum">Titan arum</option>
-                        </optgroup>
-                        <optgroup label="Other">
-                            <option value="Environment">Environment</option>
-                            <option value="Other">Other</option>
-                        </optgroup>
-                    </select>
+                    <div id="tags">
+                        <label><input type="checkbox" name="tags[]" value="Clouded leopard" /> Clouded leopard</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Fig wasp" /> Fig wasp</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Hornbill" /> Hornbill</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Monkey" /> Monkey</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Orangutan" /> Orangutan</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Rabbit" /> Rabbit</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Rhinoceros" /> Rhinoceros</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Tapir" /> Tapir</label><br />
+                        <hr />
+                        <label><input type="checkbox" name="tags[]" value="Fig" /> Fig</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Tiger" /> Tiger</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Tetrastigma" /> Tetrastigma</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Rafflesia" /> Rafflesia</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Titan arum" /> Titan arum</label><br />
+                        <hr />
+                        <label><input type="checkbox" name="tags[]" value="Environment" /> Environment</label><br />
+                        <label><input type="checkbox" name="tags[]" value="Other" /> Other</label>
+                    </div>
                 </td>
             </tr>
             

@@ -101,6 +101,13 @@ select, textarea {
   height: 100%;
   min-height: 350px;
   font-size: 11pt;
+  background-color: black;
+  padding: 10px;
+}
+
+#tags label {
+  color: white;
+  font-weight: normal;
 }
 
 #show-all {
@@ -118,10 +125,19 @@ select, textarea {
 
 input[type=submit] {
   font-size: 1.5em;
+  border: none;
+  box-shadow: rgba(0,0,0, 1) 4px 4px 7px;
 }
 
 input[type=reset] {
-  background: #888;
+  background: #524541;
+  border: none;
+  box-shadow: rgba(0,0,0, 1) 4px 4px 7px;
+}
+
+input[type=reset]:hover {
+  background: #806C63;
+  color: white;
 }
 
 .baloon {
@@ -162,6 +178,8 @@ input[type=reset] {
 .baloon:hover {
   cursor: pointer;
 }
+
+
 
 
 /* concepts */
